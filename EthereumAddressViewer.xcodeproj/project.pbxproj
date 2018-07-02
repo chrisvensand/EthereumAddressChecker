@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4595BF120EA9A8D00CF310B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4595BF020EA9A8D00CF310B /* AppDelegate.swift */; };
+		A4595BF620EA9A8D00CF310B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4595BF420EA9A8D00CF310B /* Main.storyboard */; };
+		A4595BF820EA9A8F00CF310B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4595BF720EA9A8F00CF310B /* Assets.xcassets */; };
+		A4595BFB20EA9A8F00CF310B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4595BF920EA9A8F00CF310B /* LaunchScreen.storyboard */; };
+		A4595C0620EA9A8F00CF310B /* EthereumAddressViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4595C0520EA9A8F00CF310B /* EthereumAddressViewerTests.swift */; };
+		A4595C1120EA9A8F00CF310B /* EthereumAddressViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4595C1020EA9A8F00CF310B /* EthereumAddressViewerUITests.swift */; };
+		A4595C1F20EAA4F600CF310B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4595C1E20EAA4F600CF310B /* HomeScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4595C0220EA9A8F00CF310B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4595BE520EA9A8D00CF310B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4595BEC20EA9A8D00CF310B;
+			remoteInfo = EthereumAddressViewer;
+		};
+		A4595C0D20EA9A8F00CF310B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4595BE520EA9A8D00CF310B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4595BEC20EA9A8D00CF310B;
+			remoteInfo = EthereumAddressViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4595BED20EA9A8D00CF310B /* EthereumAddressViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthereumAddressViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4595BF020EA9A8D00CF310B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4595BF520EA9A8D00CF310B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4595BF720EA9A8F00CF310B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4595BFA20EA9A8F00CF310B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4595BFC20EA9A8F00CF310B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4595C0120EA9A8F00CF310B /* EthereumAddressViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthereumAddressViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4595C0520EA9A8F00CF310B /* EthereumAddressViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAddressViewerTests.swift; sourceTree = "<group>"; };
+		A4595C0720EA9A8F00CF310B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4595C0C20EA9A8F00CF310B /* EthereumAddressViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthereumAddressViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4595C1020EA9A8F00CF310B /* EthereumAddressViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAddressViewerUITests.swift; sourceTree = "<group>"; };
+		A4595C1220EA9A8F00CF310B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4595C1E20EAA4F600CF310B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4595BEA20EA9A8D00CF310B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4595BFE20EA9A8F00CF310B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4595C0920EA9A8F00CF310B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4595BE420EA9A8D00CF310B = {
+			isa = PBXGroup;
+			children = (
+				A4595BEF20EA9A8D00CF310B /* EthereumAddressViewer */,
+				A4595C0420EA9A8F00CF310B /* EthereumAddressViewerTests */,
+				A4595C0F20EA9A8F00CF310B /* EthereumAddressViewerUITests */,
+				A4595BEE20EA9A8D00CF310B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4595BEE20EA9A8D00CF310B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4595BED20EA9A8D00CF310B /* EthereumAddressViewer.app */,
+				A4595C0120EA9A8F00CF310B /* EthereumAddressViewerTests.xctest */,
+				A4595C0C20EA9A8F00CF310B /* EthereumAddressViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4595BEF20EA9A8D00CF310B /* EthereumAddressViewer */ = {
+			isa = PBXGroup;
+			children = (
+				A4595C2020EABB8200CF310B /* Supporting Files */,
+				A4595C1E20EAA4F600CF310B /* HomeScreen.swift */,
+				A4595BF420EA9A8D00CF310B /* Main.storyboard */,
+				A4595BFC20EA9A8F00CF310B /* Info.plist */,
+			);
+			path = EthereumAddressViewer;
+			sourceTree = "<group>";
+		};
+		A4595C0420EA9A8F00CF310B /* EthereumAddressViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4595C0520EA9A8F00CF310B /* EthereumAddressViewerTests.swift */,
+				A4595C0720EA9A8F00CF310B /* Info.plist */,
+			);
+			path = EthereumAddressViewerTests;
+			sourceTree = "<group>";
+		};
+		A4595C0F20EA9A8F00CF310B /* EthereumAddressViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A4595C1020EA9A8F00CF310B /* EthereumAddressViewerUITests.swift */,
+				A4595C1220EA9A8F00CF310B /* Info.plist */,
+			);
+			path = EthereumAddressViewerUITests;
+			sourceTree = "<group>";
+		};
+		A4595C2020EABB8200CF310B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4595BF020EA9A8D00CF310B /* AppDelegate.swift */,
+				A4595BF720EA9A8F00CF310B /* Assets.xcassets */,
+				A4595BF920EA9A8F00CF310B /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4595BEC20EA9A8D00CF310B /* EthereumAddressViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4595C1520EA9A8F00CF310B /* Build configuration list for PBXNativeTarget "EthereumAddressViewer" */;
+			buildPhases = (
+				A4595BE920EA9A8D00CF310B /* Sources */,
+				A4595BEA20EA9A8D00CF310B /* Frameworks */,
+				A4595BEB20EA9A8D00CF310B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EthereumAddressViewer;
+			productName = EthereumAddressViewer;
+			productReference = A4595BED20EA9A8D00CF310B /* EthereumAddressViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4595C0020EA9A8F00CF310B /* EthereumAddressViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4595C1820EA9A8F00CF310B /* Build configuration list for PBXNativeTarget "EthereumAddressViewerTests" */;
+			buildPhases = (
+				A4595BFD20EA9A8F00CF310B /* Sources */,
+				A4595BFE20EA9A8F00CF310B /* Frameworks */,
+				A4595BFF20EA9A8F00CF310B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4595C0320EA9A8F00CF310B /* PBXTargetDependency */,
+			);
+			name = EthereumAddressViewerTests;
+			productName = EthereumAddressViewerTests;
+			productReference = A4595C0120EA9A8F00CF310B /* EthereumAddressViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4595C0B20EA9A8F00CF310B /* EthereumAddressViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4595C1B20EA9A8F00CF310B /* Build configuration list for PBXNativeTarget "EthereumAddressViewerUITests" */;
+			buildPhases = (
+				A4595C0820EA9A8F00CF310B /* Sources */,
+				A4595C0920EA9A8F00CF310B /* Frameworks */,
+				A4595C0A20EA9A8F00CF310B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4595C0E20EA9A8F00CF310B /* PBXTargetDependency */,
+			);
+			name = EthereumAddressViewerUITests;
+			productName = EthereumAddressViewerUITests;
+			productReference = A4595C0C20EA9A8F00CF310B /* EthereumAddressViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4595BE520EA9A8D00CF310B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Christopher Vensand";
+				TargetAttributes = {
+					A4595BEC20EA9A8D00CF310B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					A4595C0020EA9A8F00CF310B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A4595BEC20EA9A8D00CF310B;
+					};
+					A4595C0B20EA9A8F00CF310B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A4595BEC20EA9A8D00CF310B;
+					};
+				};
+			};
+			buildConfigurationList = A4595BE820EA9A8D00CF310B /* Build configuration list for PBXProject "EthereumAddressViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4595BE420EA9A8D00CF310B;
+			productRefGroup = A4595BEE20EA9A8D00CF310B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4595BEC20EA9A8D00CF310B /* EthereumAddressViewer */,
+				A4595C0020EA9A8F00CF310B /* EthereumAddressViewerTests */,
+				A4595C0B20EA9A8F00CF310B /* EthereumAddressViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4595BEB20EA9A8D00CF310B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4595BFB20EA9A8F00CF310B /* LaunchScreen.storyboard in Resources */,
+				A4595BF820EA9A8F00CF310B /* Assets.xcassets in Resources */,
+				A4595BF620EA9A8D00CF310B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4595BFF20EA9A8F00CF310B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4595C0A20EA9A8F00CF310B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4595BE920EA9A8D00CF310B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4595C1F20EAA4F600CF310B /* HomeScreen.swift in Sources */,
+				A4595BF120EA9A8D00CF310B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4595BFD20EA9A8F00CF310B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4595C0620EA9A8F00CF310B /* EthereumAddressViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4595C0820EA9A8F00CF310B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4595C1120EA9A8F00CF310B /* EthereumAddressViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4595C0320EA9A8F00CF310B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4595BEC20EA9A8D00CF310B /* EthereumAddressViewer */;
+			targetProxy = A4595C0220EA9A8F00CF310B /* PBXContainerItemProxy */;
+		};
+		A4595C0E20EA9A8F00CF310B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4595BEC20EA9A8D00CF310B /* EthereumAddressViewer */;
+			targetProxy = A4595C0D20EA9A8F00CF310B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4595BF420EA9A8D00CF310B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4595BF520EA9A8D00CF310B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4595BF920EA9A8F00CF310B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4595BFA20EA9A8F00CF310B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4595C1320EA9A8F00CF310B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4595C1420EA9A8F00CF310B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4595C1620EA9A8F00CF310B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVM23D5H22;
+				INFOPLIST_FILE = EthereumAddressViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChristopherVensand.EthereumAddressViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4595C1720EA9A8F00CF310B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVM23D5H22;
+				INFOPLIST_FILE = EthereumAddressViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChristopherVensand.EthereumAddressViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4595C1920EA9A8F00CF310B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EthereumAddressViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChristopherVensand.EthereumAddressViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EthereumAddressViewer.app/EthereumAddressViewer";
+			};
+			name = Debug;
+		};
+		A4595C1A20EA9A8F00CF310B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EthereumAddressViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChristopherVensand.EthereumAddressViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EthereumAddressViewer.app/EthereumAddressViewer";
+			};
+			name = Release;
+		};
+		A4595C1C20EA9A8F00CF310B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EthereumAddressViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChristopherVensand.EthereumAddressViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EthereumAddressViewer;
+			};
+			name = Debug;
+		};
+		A4595C1D20EA9A8F00CF310B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EthereumAddressViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChristopherVensand.EthereumAddressViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EthereumAddressViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4595BE820EA9A8D00CF310B /* Build configuration list for PBXProject "EthereumAddressViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4595C1320EA9A8F00CF310B /* Debug */,
+				A4595C1420EA9A8F00CF310B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4595C1520EA9A8F00CF310B /* Build configuration list for PBXNativeTarget "EthereumAddressViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4595C1620EA9A8F00CF310B /* Debug */,
+				A4595C1720EA9A8F00CF310B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4595C1820EA9A8F00CF310B /* Build configuration list for PBXNativeTarget "EthereumAddressViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4595C1920EA9A8F00CF310B /* Debug */,
+				A4595C1A20EA9A8F00CF310B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4595C1B20EA9A8F00CF310B /* Build configuration list for PBXNativeTarget "EthereumAddressViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4595C1C20EA9A8F00CF310B /* Debug */,
+				A4595C1D20EA9A8F00CF310B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4595BE520EA9A8D00CF310B /* Project object */;
+}
