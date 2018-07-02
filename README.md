@@ -1,4 +1,4 @@
 # EthereumAddressChecker
-iOS Application to check Ethereum Balances
+iOS Application to check Ethereum Balances.
 
-Data is obtained fromEtherscan.io's API
+Powered by Etherscan.io APIs
