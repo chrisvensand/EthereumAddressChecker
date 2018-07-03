@@ -19,8 +19,6 @@ class HomeScreen: UIViewController {
     
     let weiPerEther = 1e18
     var etherBalance = 0.0
-    // Etherscan.io APIKey
-    let apiKeyToken = "5VSMNSG8R9K4W6M7KC85RXRSVHYZZHGNTZ"
 
     @IBOutlet weak var userInput: UITextField!
     @IBOutlet weak var publicAddressLabel: UILabel!
