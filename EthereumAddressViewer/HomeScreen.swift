@@ -10,10 +10,25 @@ import UIKit
 
 class HomeScreen: UIViewController {
 
-    @IBOutlet weak var publicAddress: UITextField!
+    @IBOutlet weak var userInput: UITextField!
+    @IBOutlet weak var publicAddressLabel: UILabel!
+    @IBOutlet weak var etherBalanceLabel: UILabel!
     
     @IBAction func checkBalance(_ sender: UIButton) {
-        print(self.publicAddress.text as Any)
+        
+        let publicAddress = self.userInput.text!
+        
+        if publicAddress.count != 42 {
+            self.publicAddressLabel.text = "Address: Invalid Public Address"
+            self.etherBalanceLabel.text = "Balance (Eth): 0"
+        }
+        
+        else {
+            self.publicAddressLabel.text = "Address: \(publicAddress)"
+            // location to retrieve etherscan.io input
+            self.etherBalanceLabel.text = "Balance (Eth): (etherscan.io val)"
+        }
+        
     }
     
     
