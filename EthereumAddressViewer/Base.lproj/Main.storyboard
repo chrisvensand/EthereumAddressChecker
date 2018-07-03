@@ -18,10 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YX9-XQ-r2i">
-                                <rect key="frame" x="87" y="286" width="200" height="176.66666666666663"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YX9-XQ-r2i">
+                                <rect key="frame" x="84" y="229" width="200" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ethereum Public Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCo-ZE-gRS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ethereum Public Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCo-ZE-gRS">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="6Qf-65-fl0"/>
@@ -31,7 +32,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0xE90450a359..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1R3-2D-4Jq">
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0xE90450a359..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1R3-2D-4Jq">
                                         <rect key="frame" x="0.0" y="40" width="200" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="JUo-Uu-x1j"/>
@@ -40,48 +41,47 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcd-V2-3pA">
-                                        <rect key="frame" x="0.0" y="70" width="200" height="106.66666666666669"/>
-                                        <color key="backgroundColor" red="0.13698639595709489" green="0.47091878545738419" blue="0.96993559598922729" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Check Balance">
-                                            <color key="titleColor" red="0.60802593427982488" green="0.99024110225281992" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="checkBalance:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ms1-Bn-lkB"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="1R3-2D-4Jq" firstAttribute="centerX" secondItem="YX9-XQ-r2i" secondAttribute="centerX" id="E9i-rc-zGe"/>
-                                    <constraint firstItem="lCo-ZE-gRS" firstAttribute="centerX" secondItem="YX9-XQ-r2i" secondAttribute="centerX" id="NEM-OJ-LQD"/>
-                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZo-1w-WBx">
-                                <rect key="frame" x="87" y="587.66666666666663" width="200" height="20.333333333333371"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address: 0x00000..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZo-1w-WBx">
+                                <rect key="frame" x="37" y="502" width="300" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balance (Eth): 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StU-KM-JA1">
+                                <rect key="frame" x="123" y="564" width="122" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcd-V2-3pA">
+                                <rect key="frame" x="84" y="329" width="200" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.13698639595709489" green="0.47091878545738419" blue="0.96993559598922729" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Check Balance">
+                                    <color key="titleColor" red="0.60802593427982488" green="0.99024110225281992" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkBalance:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ms1-Bn-lkB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CZo-1w-WBx" secondAttribute="bottom" constant="170" id="P3G-9w-pd6"/>
-                            <constraint firstItem="YX9-XQ-r2i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="242" id="Xzj-Gr-04D"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CZo-1w-WBx" secondAttribute="trailing" constant="88" id="g7M-Xb-q2V"/>
-                            <constraint firstItem="YX9-XQ-r2i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jsH-GK-yKD"/>
-                            <constraint firstItem="CZo-1w-WBx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="m5d-0P-R5x"/>
-                            <constraint firstItem="CZo-1w-WBx" firstAttribute="top" secondItem="YX9-XQ-r2i" secondAttribute="bottom" constant="125" id="v7l-Ey-pKN"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="publicAddress" destination="1R3-2D-4Jq" id="Y6r-wW-l2r"/>
+                        <outlet property="etherBalanceLabel" destination="StU-KM-JA1" id="8bS-7a-zjv"/>
+                        <outlet property="publicAddressLabel" destination="CZo-1w-WBx" id="KJO-FV-3lW"/>
+                        <outlet property="userInput" destination="1R3-2D-4Jq" id="wgJ-l0-ZxW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-129" y="8"/>
+            <point key="canvasLocation" x="-130.40000000000001" y="7.389162561576355"/>
         </scene>
     </scenes>
 </document>
