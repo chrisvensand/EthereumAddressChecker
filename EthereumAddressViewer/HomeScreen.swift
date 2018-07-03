@@ -7,8 +7,20 @@
 //
 
 import UIKit
+import Foundation
+
+struct AddressData: Decodable {
+    let status: String
+    let message: String
+    let result: String
+}
 
 class HomeScreen: UIViewController {
+    
+    let weiPerEther = 1e18
+    var etherBalance = 0.0
+    // Etherscan.io APIKey
+    let apiKeyToken = "5VSMNSG8R9K4W6M7KC85RXRSVHYZZHGNTZ"
 
     @IBOutlet weak var userInput: UITextField!
     @IBOutlet weak var publicAddressLabel: UILabel!
@@ -17,19 +29,34 @@ class HomeScreen: UIViewController {
     @IBAction func checkBalance(_ sender: UIButton) {
         
         let publicAddress = self.userInput.text!
+        let jsonUrlString = "https://api.etherscan.io/api?module=account&action=balance&address=" + publicAddress + "&tag=latest&apikey=" + apiKeyToken
         
         if publicAddress.count != 42 {
             self.publicAddressLabel.text = "Address: Invalid Public Address"
-            self.etherBalanceLabel.text = "Balance (Eth): 0"
+        }
+            
+        else if publicAddress.prefix(2) != "0x" {
+            self.publicAddressLabel.text = "Address: Must begin with 0x"
         }
         
         else {
-            self.publicAddressLabel.text = "Address: \(publicAddress)"
-            // location to retrieve etherscan.io input
-            self.etherBalanceLabel.text = "Balance (Eth): (etherscan.io val)"
+            
+            let urlString = URL(string: jsonUrlString)
+            
+            URLSession.shared.dataTask(with: urlString!) { (data, response, Error) in
+                
+                do {
+                    let addressData = try JSONDecoder().decode(AddressData.self, from: data!)
+                    self.etherBalance = Double(addressData.result)! / self.weiPerEther
+                    self.etherBalanceLabel.text = "Balance (Eth): " + String(self.etherBalance)
+                } catch let jsonErr {
+                    print(jsonErr)
+                }
+                
+            }.resume()
+            
         }
         
     }
-    
     
 }
