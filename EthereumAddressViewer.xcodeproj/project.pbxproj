@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A417786620EC22DF0001C95E /* EtherscanAPIKey.txt in Resources */ = {isa = PBXBuildFile; fileRef = A417786520EC22DF0001C95E /* EtherscanAPIKey.txt */; };
+		A417786C20F30CA00001C95E /* eTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417786B20F30CA00001C95E /* eTracker.swift */; };
+		A417786E20F30D830001C95E /* AddressTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417786D20F30D830001C95E /* AddressTracker.swift */; };
+		A417787020F31D3A0001C95E /* ETHAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417786F20F31D3A0001C95E /* ETHAddress.swift */; };
 		A4595BF120EA9A8D00CF310B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4595BF020EA9A8D00CF310B /* AppDelegate.swift */; };
 		A4595BF620EA9A8D00CF310B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4595BF420EA9A8D00CF310B /* Main.storyboard */; };
 		A4595BF820EA9A8F00CF310B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4595BF720EA9A8F00CF310B /* Assets.xcassets */; };
 		A4595BFB20EA9A8F00CF310B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4595BF920EA9A8F00CF310B /* LaunchScreen.storyboard */; };
 		A4595C0620EA9A8F00CF310B /* EthereumAddressViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4595C0520EA9A8F00CF310B /* EthereumAddressViewerTests.swift */; };
 		A4595C1120EA9A8F00CF310B /* EthereumAddressViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4595C1020EA9A8F00CF310B /* EthereumAddressViewerUITests.swift */; };
-		A4595C1F20EAA4F600CF310B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4595C1E20EAA4F600CF310B /* HomeScreen.swift */; };
+		A4595C1F20EAA4F600CF310B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4595C1E20EAA4F600CF310B /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A417786520EC22DF0001C95E /* EtherscanAPIKey.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = EtherscanAPIKey.txt; sourceTree = "<group>"; };
+		A417786B20F30CA00001C95E /* eTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eTracker.swift; sourceTree = "<group>"; };
+		A417786D20F30D830001C95E /* AddressTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTracker.swift; sourceTree = "<group>"; };
+		A417786F20F31D3A0001C95E /* ETHAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETHAddress.swift; sourceTree = "<group>"; };
 		A4595BED20EA9A8D00CF310B /* EthereumAddressViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthereumAddressViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4595BF020EA9A8D00CF310B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4595BF520EA9A8D00CF310B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +52,7 @@
 		A4595C0C20EA9A8F00CF310B /* EthereumAddressViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthereumAddressViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4595C1020EA9A8F00CF310B /* EthereumAddressViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAddressViewerUITests.swift; sourceTree = "<group>"; };
 		A4595C1220EA9A8F00CF310B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4595C1E20EAA4F600CF310B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		A4595C1E20EAA4F600CF310B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				A4595C2020EABB8200CF310B /* Supporting Files */,
-				A4595C1E20EAA4F600CF310B /* HomeScreen.swift */,
+				A4595C1E20EAA4F600CF310B /* ViewController.swift */,
+				A417786B20F30CA00001C95E /* eTracker.swift */,
+				A417786D20F30D830001C95E /* AddressTracker.swift */,
+				A417786F20F31D3A0001C95E /* ETHAddress.swift */,
 				A4595BF420EA9A8D00CF310B /* Main.storyboard */,
 				A4595BFC20EA9A8F00CF310B /* Info.plist */,
 			);
@@ -131,7 +138,6 @@
 				A4595BF020EA9A8D00CF310B /* AppDelegate.swift */,
 				A4595BF720EA9A8F00CF310B /* Assets.xcassets */,
 				A4595BF920EA9A8F00CF310B /* LaunchScreen.storyboard */,
-				A417786520EC22DF0001C95E /* EtherscanAPIKey.txt */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,7 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4595BFB20EA9A8F00CF310B /* LaunchScreen.storyboard in Resources */,
-				A417786620EC22DF0001C95E /* EtherscanAPIKey.txt in Resources */,
 				A4595BF820EA9A8F00CF310B /* Assets.xcassets in Resources */,
 				A4595BF620EA9A8D00CF310B /* Main.storyboard in Resources */,
 			);
@@ -268,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4595C1F20EAA4F600CF310B /* HomeScreen.swift in Sources */,
+				A4595C1F20EAA4F600CF310B /* ViewController.swift in Sources */,
+				A417787020F31D3A0001C95E /* ETHAddress.swift in Sources */,
+				A417786C20F30CA00001C95E /* eTracker.swift in Sources */,
 				A4595BF120EA9A8D00CF310B /* AppDelegate.swift in Sources */,
+				A417786E20F30D830001C95E /* AddressTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
