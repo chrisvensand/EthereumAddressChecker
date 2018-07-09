@@ -54,7 +54,7 @@ struct EthplorerDescription: Decodable {
     let tokens: [Token]?
 }
 
-class HomeScreen: UIViewController {
+class ViewController: UIViewController {
 
     @IBOutlet weak var userInput: UITextField!
     @IBOutlet weak var publicAddressLabel: UILabel!
@@ -83,7 +83,7 @@ class HomeScreen: UIViewController {
                     print(data!)
                     print(publicAddress)
                     let ethplorerDescription = try JSONDecoder().decode(EthplorerDescription.self, from: data!)
-                    print(ethplorerDescription.tokens[0].tokenInfo!.name!)
+                    print(ethplorerDescription.tokens![0].tokenInfo!.name!)
                 } catch let jsonErr {
                     print(jsonErr)
                 }
